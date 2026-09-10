@@ -2,6 +2,7 @@ require("dotenv").config();
 const authRoutes = require("./routes/auth");
 const habitsRoutes = require("./routes/habits");
 const settingsRoutes = require("./routes/settings");
+const tasksRoutes = require("./routes/tasks");
 const notesRoutes = require("./routes/notes");
 const express = require("express");
 const cors = require("cors");
@@ -14,6 +15,7 @@ app.use("/auth", authRoutes);
 app.use("/settings", settingsRoutes);
 app.use("/habits", habitsRoutes);
 app.use("/notes", notesRoutes);
+app.use("/tasks", tasksRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "Routina API is running" });
