@@ -1,0 +1,14 @@
+# Node / Express (api/)
+api/node_modules/
+api/.env
+api/npm-debug.log
+
+# Android (app/)
+app/.gradle/
+app/build/
+app/local.properties
+app/*.iml
+app/.idea/
+app/captures/
+app/.externalNativeBuild/
+app/.cxx/
