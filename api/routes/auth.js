@@ -27,6 +27,11 @@ router.post("/register", async (req, res) => {
       email,
       password: hashedPassword,
       createdAt: new Date().toISOString(),
+      settings: {
+        darkMode: false,
+        notificationsEnabled: true,
+        language: "en",
+      },
     };
 
     const docRef = await usersRef.add(newUser);
