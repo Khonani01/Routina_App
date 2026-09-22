@@ -62,3 +62,10 @@ Routina is a native Android application built to assist users in building daily 
 1. Clone this repository:
    ```bash
   git clone https://github.com/Khonani01/Routina_App.git
+
+## Changelog - Charity Fix 2026-05-11
+Fixed HabitUtils.kt - BUILD SUCCESSFUL
+Fixed HabitsActivity.kt
+Added Models.kt
+Added NotesScreen.kt and NotesViewModel.kt
+Pushed by Charity Taulene ST10438951
