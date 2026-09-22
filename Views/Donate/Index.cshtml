@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Donate - Gift of the Givers";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white">
+                    <h3 class="mb-0"><i class="fas fa-hand-holding-heart"></i> Make a Donation</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <!-- Donation Type -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Donation Type</label>
+                            <div class="btn-group w-100" role="group">
+                                <input type="radio" class="btn-check" name="IsRecurring" id="oneTime" value="false" checked autocomplete="off">
+                                <label class="btn btn-outline-primary" for="oneTime">One-Time</label>
+
+                                <input type="radio" class="btn-check" name="IsRecurring" id="recurring" value="true" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="recurring">Recurring</label>
+                            </div>
+                        </div>
+
+                        <!-- Currency -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Currency</label>
+                            <select name="Currency" class="form-select">
+                                <option value="ZAR">🇿🇦 ZAR - South African Rand</option>
+                                <option value="USD">🇺🇸 USD - US Dollar</option>
+                                <option value="EUR">🇪🇺 EUR - Euro</option>
+                            </select>
+                        </div>
+
+                        <!-- Amount -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Amount</label>
+                            <input type="number" name="Amount" class="form-control" placeholder="Enter amount" min="1" step="0.01" required />
+                        </div>
+
+                        <!-- Anonymous Option -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" name="IsAnonymous" id="anonymous" />
+                            <label class="form-check-label" for="anonymous">
+                                <i class="fas fa-user-secret"></i> Donate Anonymously
+                            </label>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="fas fa-heart"></i> Donate Now
+                            </button>
+                        </div>
+                    </form>
+
+                    @if (ViewBag.Message != null)
+                    {
+                        <div class="alert alert-success mt-3">
+                            <i class="fas fa-check-circle"></i> @ViewBag.Message
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
