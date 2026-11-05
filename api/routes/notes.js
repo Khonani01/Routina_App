@@ -22,8 +22,23 @@ router.post("/", verifyToken, async (req, res) => {
       return res.status(400).json({ error: "Title is required" });
     }
 
+        const clientId = req.body.clientId || null;
+
+    if (clientId) {
+      const dup = await db
+        .collection("notes")
+        .where("userId", "==", req.userId)
+        .where("clientId", "==", clientId)
+        .get();
+
+      if (!dup.empty) {
+        return res.status(200).json({ id: dup.docs[0].id, ...dup.docs[0].data() });
+      }
+    }
+
     const newNote = {
       userId: req.userId,
+      clientId,
       title,
       content: content || "",
       color: color || "#FFFFFF",

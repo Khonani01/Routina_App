@@ -22,15 +22,29 @@ router.post("/", verifyToken, async (req, res) => {
       return res.status(400).json({ error: "Title is required" });
     }
 
+        const clientId = req.body.clientId || null;
+
+    if (clientId) {
+      const dup = await db
+        .collection("habits")
+        .where("userId", "==", req.userId)
+        .where("clientId", "==", clientId)
+        .get();
+
+      if (!dup.empty) {
+        return res.status(200).json({ id: dup.docs[0].id, ...dup.docs[0].data() });
+      }
+    }
+
     const newHabit = {
       userId: req.userId,
+      clientId,
       title,
       frequency: frequency || "daily",
       goal: goal || 1,
       streak: 0,
       createdAt: new Date().toISOString(),
     };
-
     const docRef = await db.collection("habits").add(newHabit);
     res.status(201).json({ id: docRef.id, ...newHabit });
   } catch (err) {
