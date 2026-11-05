@@ -16,6 +16,7 @@ app.use("/settings", settingsRoutes);
 app.use("/habits", habitsRoutes);
 app.use("/notes", notesRoutes);
 app.use("/tasks", tasksRoutes);
+app.use("/notifications", require("./routes/notifications"));
 
 app.get("/", (req, res) => {
   res.json({ message: "Routina API is running" });
