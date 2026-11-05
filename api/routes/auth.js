@@ -2,7 +2,6 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const db = require("../config/firebase");
-const { getAuth } = require("firebase-admin/auth");
 
 const router = express.Router();
 
@@ -92,6 +91,8 @@ router.post("/sso", async (req, res) => {
     if (!idToken) {
       return res.status(400).json({ error: "idToken is required" });
     }
+
+      const { getAuth } = require("firebase-admin/auth");
 
     let decoded;
     try {
