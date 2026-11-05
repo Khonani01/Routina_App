@@ -1,71 +1,116 @@
-﻿# Routina
+﻿Project README Documentation Report 
 
-A student productivity app for Android combining habit tracking, notes, and task/reminder management.
+Project Title 
 
-Built for OPSC6312 (Open Source Coding, Intermediate) — Rosebank College Pretoria.
+Routina App – Student Productivity & Habit Management System 
 
-## Team
+Module: OPSC6312 (Open Source Coding, Intermediate) 
 
-| Name                     | Student Number | Role            |
-| ------------------------ | -------------- | --------------- |
-| Khonani Mutobvu          | ST10439622     | Project Manager |
-| Ofentse Nyiko Mashigoane | ST10456959     | Developer       |
-| Vukosi Sono              | ST10453078     | Developer       |
-| Charity Taulene          | ST10438951     | Developer       |
-| Khumbelo Tshikororo      | ST10441369     | Developer       |
+Institution: Rosebank International 
 
-## Tech Stack
+Repository: https://github.com/Khonani01/Routina_App 
 
-- **Frontend:** Android (Kotlin, Android Studio)
-- **Backend:** Node.js / Express
-- **Database:** Firebase Firestore
-- **Hosting:** Render
+First, the TEAM TABLE: 
 
-## Project Structure
+Name 
 
-Routina_App/
-├── api/ # Node/Express REST API
-└── app/ # Android application
+Student number 
 
-## Setup Instructions
+Roles and responsibilityies 
 
-_To be completed once the API and app skeletons are built._
+Khonani Mutobvu 
 
-## Features
+ST10439622 
 
-- Habit tracking with progress goals
-- Colour-coded notes and checklists
-- Recurring reminders and priority task management
+Project Manager, Backend Integration & Build Configuration 
 
-# Routina App - Habit & Task Tracker
+Ofentse  Mashingoane 
 
-Routina is a native Android application built to assist users in building daily consistency and managing habits effectively.
+ST10456959 
 
-## Features
-- **Authentication**: User registration and login via REST API integration.
-- **Habit & Task Management**: Create, track, and manage daily habits.
-- **Settings & Customization**: Configure app settings and multi-language support.
-- **Offline Readiness**: Local session persistence for offline handling.
+Developer, Kotlin Unit Testing & Code Comments 
 
-## Tech Stack
-- **Language**: Kotlin
-- **Architecture**: MVVM / Clean Architecture
-- **Networking**: Retrofit2 & OkHttp3
-- **Build System**: Gradle
+ 
 
-## Prerequisites & Backend Setup
-1. **Android Studio**: Ladybug or newer with Android SDK API 35 installed.
-2. **Backend Service**: Ensure the backend API is running locally at `http://10.0.2.2:5000` or configure the live URL in `RetrofitClient.kt`.
-3. **Emulator/Device**: Android 15.0 (API Level 35 recommended).
+Vusikosi Sono 
 
-## How to Run the Application
-1. Clone this repository:
-   ```bash
-  git clone https://github.com/Khonani01/Routina_App.git
+st10453078 
 
-## Changelog - Charity Fix 2026-05-11
-Fixed HabitUtils.kt - BUILD SUCCESSFUL
-Fixed HabitsActivity.kt
-Added Models.kt
+Developer, Local Data & Architecture Support 
+
+ 
+
+Charity Taulene 
+
+ST10438951 
+
+Developer, Store Material & Voice-Over Script 
+
+ 
+
+Khumbelo Tshikororo 
+
+ST10441369 
+
+Developer, Repository Documentation & Quality Assurance (Re-Test Sheet) 
+
+ 
+
+1. Executive Summary & Purpose 
+
+Background & Problem Statement 
+
+Varsity life places heavy demands on students, requiring them to juggle lecture timetables, assignment deadlines, study schedules, and personal routines. Most students rely on separate applications for task management, habit tracking, and lecture notes, leading to fragmented organization and reduced focus. 
+
+The Routina Solution 
+
+Routina is a centralized, native Android productivity hub created specifically for Varsity students. It combines three core academic utilities into a single, cohesive platform: 
+
+Habit Tracking: Empowers users to build long-term academic discipline using progress goals and daily routines. 
+
+Task & Reminder Management: Enables prioritization of assignments and daily responsibilities with custom notifications. 
+
+Structured Notes: Offers accessible note-taking tools to quickly capture lecture summaries and study checklists. 
+
+2. Technical Architecture & Tech Stack 
+
+Frontend: Android Studio (Kotlin, Native UI Component Architecture) 
+
+Backend: Node.js / Express RESTful API (Hosted on Render) 
+
+Database: Firebase Firestore & Local Storage Strategy 
+
+Version Control: Git & GitHub 
+
+Routina_App/ 
+├── api/          # Node.js/Express API Endpoints & Firebase Connectivity 
+└── app/          # Native Android Application Source Code & Test Modules 
+ 
+
+3. GitHub & CI/CD Integration 
+
+The team utilized GitHub to ensure continuous integration, structured repository management, and code tracking throughout the development lifecycle: 
+
+Version Control & Branching Strategy: Feature branches were used to isolate fixes, code formatting, and test additions before merging directly to the release branch. 
+
+Automated Build Checks (GitHub Actions): GitHub Actions workflows were integrated to execute Android build verification steps, validating project integrity upon each push. 
+
+Issue Tracking & Commit Discipline: Commit messages were structured logically (e.g., Docs: Update README with project details) to maintain a clear audit trail for evaluation. 
+
+4. Final Deliverables 
+
+(<img width="738" height="1599" alt="WhatsApp Image 2026-11-05 at 23 49 20" src="https://github.com/user-attachments/assets/bead9285-4d81-4ddf-9888-bdb3982220ff" />
+) 
+
+Demonstration Video 
+
+Video Walkthrough Link: https://youtu.be/HLMnNm5wRCA?si=bXJgDU7gtPuf9z4f 
+Release Notes (Part 3 Final Release) 
+
+Version: v1.0.0-final 
+
+Build Target: Android 15.0 (API Level 35) 
+
+Status: All core functionalities, backend API endpoints, and test suites validated for final submission.
 Added NotesScreen.kt and NotesViewModel.kt
 Pushed by Charity Taulene ST10438951
