@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Routina</string>
+    <string name="app_header">ROUTINA</string>
+
+    <!-- Greetings -->
+    <string name="good_morning">Dumela mo mosong!</string>
+    <string name="good_afternoon">Dumela mo tshokologong!</string>
+    <string name="good_evening">Dumela mo maitsiboyeng!</string>
+
+    <!-- Dashboard -->
+    <string name="daily_overview">Tshekatsheko ya gago ya letsatsi</string>
+    <string name="daily_progress">Tswelopele ya gago ya letsatsi</string>
+    <string name="progress_completed">%1$d%% e fetswe</string>
+    <string name="progress_subtitle">Tswelela pele. Kgato nngwe le nngwe e botlhokwa.</string>
+    <string name="your_overview">Tshekatsheko ya gago</string>
+    <string name="tasks">Ditiro</string>
+    <string name="habits">Mekgwa</string>
+    <string name="todays_tasks">Ditiro tsa gompieno</string>
+    <string name="view_all">Bona tsotlhe</string>
+    <string name="no_tasks_added">Ga go ditiro tse di tsenyestsweng. Simolola go rulaganya letsatsi!</string>
+    <string name="no_tasks_today">Ga go ditiro tsa gompieno!</string>
+    <string name="tasks_completed_count">%1$d mo go %2$d tsa ditiro di fetswe</string>
+    <string name="quick_access">Phitlhelelo ya ka bonako</string>
+    <string name="manage_tasks">Rulaganya Ditiro</string>
+    <string name="track_habits">Latedisa Mekgwa</string>
+    <string name="my_notes">Dintlhathoko Tsa Me</string>
+    <string name="sign_out">Tswa mo nakong</string>
+    <string name="due_date_label">Letsatsi la bofelo: %1$s</string>
+    <string name="no_due_date">Ga go letsatsi la bofelo</string>
+    <string name="priority_label">Mabaka: %1$s</string>
+    <string name="mark_as_completed">Tshwaya fa e fetswe</string>
+    <string name="completed">E fetswe</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Dithulaganyo</string>
+    <string name="settings_subtitle">Rulaganya akhaonto le dikgatlhego tsa gago.</string>
+    <string name="account_section">AKHAONTO</string>
+    <string name="display_name">Leina le le bontshiwang</string>
+    <string name="enter_display_name_hint">Tsenya leina la gago</string>
+    <string name="save_profile">Boloka Porofaili</string>
+    <string name="saving">E a boloka...</string>
+    <string name="app_preferences_section">DIKGATLHEGO TSA TSHIMOLOLO</string>
+    <string name="notifications">Ditsebiso</string>
+    <string name="notifications_sub">Amogela ditsebiso tsa ditiro le mekgwa</string>
+    <string name="dark_mode">Mokgwa wa lefifi</string>
+    <string name="dark_mode_sub">Dirisang tebo e e fifetseng</string>
+    <string name="app_language">Puo ya tshimololo</string>
+    <string name="about_section">KA GA</string>
+    <string name="app_tagline">Dira gore letsatsi le letsatsi le balege.</string>
+    <string name="app_version">Phetolo 1.0</string>
+    <string name="back_to_dashboard">Boela mo Dashboard</string>
+
+    <!-- Tasks Screen -->
+    <string name="tasks_subtitle">Rulaganya le go latedisa ditiro tsa gago.</string>
+    <string name="total_tasks">Palogotlhe ya Ditiro</string>
+    <string name="completed_tasks">Tse di fetsweng</string>
+    <string name="add_new_task">Tsenya Tiro e Ntshwa</string>
+    <string name="task_title_hint">Setlhogo sa tiro</string>
+    <string name="task_desc_hint">Tlhaloso ya tiro</string>
+    <string name="select_due_date">Tlhopha letsatsi la bofelo</string>
+    <string name="priority">Mabaka</string>
+    <string name="add_task_btn">Tsenya Tiro</string>
+    <string name="filter_tasks">Tlhopha Ditiro</string>
+    <string name="your_tasks">Ditiro Tsa Gago</string>
+    <string name="no_tasks_empty">Ga go ditiro go fitlha jaanong.</string>
+    <string name="no_tasks_category">Ga go ditiro mo karolong e.</string>
+    <string name="delete_task">Phimola tiro</string>
+    <string name="confirm_delete_task_title">Phimola tiro</string>
+    <string name="confirm_delete_task_msg">A o tlhomamisa go phimola \'%1$s\'?</string>
+    <string name="delete">Phimola</string>
+    <string name="cancel">Kansela</string>
+
+    <!-- Habits Screen -->
+    <string name="habits_subtitle">Aga mekgwa e e siameng.</string>
+    <string name="habits_progress">Tswelopele ya Mekgwa</string>
+    <string name="habits_completed_fmt">%1$d mo go %2$d tsa mekgwa di fetswe</string>
+    <string name="add_new_habit">Tsenya Mokgwa o Motswa</string>
+    <string name="habit_name_hint">Leina la mokgwa</string>
+    <string name="frequency">Kgafetsa</string>
+    <string name="add_habit_btn">Tsenya Mokgwa</string>
+    <string name="your_habits">Mekgwa Yago</string>
+    <string name="no_habits_empty">Ga go mekgwa go fitlha jaanong.</string>
+    <string name="delete_habit">Phimola mokgwa</string>
+    <string name="confirm_delete_habit_title">Phimola mokgwa</string>
+    <string name="confirm_delete_habit_msg">A o tlhomamisa go phimola \'%1$s\'?</string>
+
+    <!-- Notes Screen -->
+    <string name="notes_title">Dintlhathoko</string>
+    <string name="notes_subtitle">Tshwara megopolo le dikgopolo tsa gago.</string>
+    <string name="search_notes_hint">Batla dintlhathoko...</string>
+    <string name="add_new_note">Tsenya / Baakanya Ntlhathoko</string>
+    <string name="note_title_hint">Setlhogo sa ntlhathoko</string>
+    <string name="note_content_hint">Kwela ntlhathoko ya gago fano...</string>
+    <string name="card_color">Mmala wa Karata</string>
+    <string name="save_note_btn">Boloka Ntlhathoko</string>
+    <string name="update_note_btn">Nchafatsa Ntlhathoko</string>
+    <string name="your_notes">Dintlhathoko Tsa Gago</string>
+    <string name="no_notes_empty">Ga go dintlhathoko tsa gompieno.</string>
+    <string name="no_notes_match">Ga go dintlhathoko tse di tshwanang.</string>
+    <string name="edit">Baakanya</string>
+
+    <!-- Auth / Main Screen -->
+    <string name="welcome_back">O amogelwa gape</string>
+    <string name="signin_sub">Tsena go rulaganya letsatsi.</string>
+    <string name="create_account">Tlhoma akhaonto</string>
+    <string name="signup_sub">Tsena mo Routina go rulaganya letsatsi.</string>
+    <string name="tab_sign_in">Tsena</string>
+    <string name="tab_sign_up">Ikwalise</string>
+    <string name="full_name">Leina ka Botlalo</string>
+    <string name="full_name_hint">Tsenya leina la gago ka botlalo</string>
+    <string name="email">Aterese ya Imeile</string>
+    <string name="email_hint">leina@sekai.com</string>
+    <string name="password">Lekwalo-pheti</string>
+    <string name="password_hint">Tsenya lekwalo-pheti</string>
+    <string name="confirm_password">Netefatsa Lekwalo-pheti</string>
+    <string name="confirm_password_hint">Tsenya lekwalo-pheti gape</string>
+    <string name="forgot_password">O lebetse lekwalo-pheti?</string>
+    <string name="sign_in_with_google">Tsena ka Google</string>
+    <string name="or_divider">KAPO</string>
+
+    <!-- String Arrays -->
+    <string-array name="task_priorities">
+        <item>Tlase</item>
+        <item>Gare</item>
+        <item>Ghodimo</item>
+    </string-array>
+
+    <string-array name="task_filters">
+        <item>Ditiro Tsa Otlhe</item>
+        <item>Tse di emetseng</item>
+        <item>Tse di fetsweng</item>
+    </string-array>
+
+    <string-array name="habit_frequencies">
+        <item>Letsatsi le letsatsi</item>
+        <item>Malatsi a tiro</item>
+        <item>Mafelo a beke</item>
+    </string-array>
+
+    <string-array name="note_colors">
+        <item>Buluu</item>
+        <item>Phepole</item>
+        <item>Bosehla</item>
+        <item>Serolwane</item>
+        <item>Pinki</item>
+    </string-array>
+
+    <string-array name="app_languages">
+        <item>English</item>
+        <item>Afrikaans</item>
+        <item>Setswana</item>
+    </string-array>
+</resources>

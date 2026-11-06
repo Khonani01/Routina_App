@@ -13,3 +13,16 @@ app/.idea/
 app/captures/
 app/.externalNativeBuild/
 app/.cxx/
+*.iml
+.gradle
+/local.properties
+/.idea
+.kotlin
+/build
+/app/build
+/captures
+.cxx
+*.jks
+*.keystore
+
+/app/release

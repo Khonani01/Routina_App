@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "40110456075",
+    "project_id": "routina-649fe",
+    "storage_bucket": "routina-649fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40110456075:android:ae39810d501525baf0360e",
+        "android_client_info": {
+          "package_name": "com.routina.functions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40110456075-q67aesf57elh0cdbl4c4vvolfe0508nd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.routina.functions",
+            "certificate_hash": "4a3fa0a55d87a6b6344a2656f115f17b5691eb1f"
+          }
+        },
+        {
+          "client_id": "40110456075-8f1j5pkh5288e1fpl3njsvv4ombmo3ti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZIK3LEuw_ianXe8RaQD6byXiKNsEdPNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40110456075-8f1j5pkh5288e1fpl3njsvv4ombmo3ti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

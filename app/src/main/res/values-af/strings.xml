@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Routina</string>
+    <string name="app_header">ROUTINA</string>
+
+    <!-- Greetings -->
+    <string name="good_morning">Goeiemôre!</string>
+    <string name="good_afternoon">Goeiemiddag!</string>
+    <string name="good_evening">Goeienaand!</string>
+
+    <!-- Dashboard -->
+    <string name="daily_overview">Jou daaglikse oorsig</string>
+    <string name="daily_progress">Jou daaglikse vordering</string>
+    <string name="progress_completed">%1$d%% voltooi</string>
+    <string name="progress_subtitle">Hou aan. Elke klein stappie tel.</string>
+    <string name="your_overview">Jou oorsig</string>
+    <string name="tasks">Takke</string>
+    <string name="habits">Gewoontes</string>
+    <string name="todays_tasks">Vandag se takke</string>
+    <string name="view_all">Sien alles</string>
+    <string name="no_tasks_added">Nog geen takke bygevoeg nie. Begin jou dag beplan!</string>
+    <string name="no_tasks_today">Geen takke vir vandag nie!</string>
+    <string name="tasks_completed_count">%1$d van %2$d takke voltooi</string>
+    <string name="quick_access">Vinnige toegang</string>
+    <string name="manage_tasks">Bestuur Takke</string>
+    <string name="track_habits">Volg Gewoontes</string>
+    <string name="my_notes">My Notas</string>
+    <string name="sign_out">Meld uit</string>
+    <string name="due_date_label">Keerdatum: %1$s</string>
+    <string name="no_due_date">Geen keerdatum</string>
+    <string name="priority_label">Prioriteit: %1$s</string>
+    <string name="mark_as_completed">Merk as voltooi</string>
+    <string name="completed">Voltooi</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Instellings</string>
+    <string name="settings_subtitle">Bestuur jou rekening en voorkeure.</string>
+    <string name="account_section">REKENING</string>
+    <string name="display_name">Vertoonnaam</string>
+    <string name="enter_display_name_hint">Voer jou vertoonnaam in</string>
+    <string name="save_profile">Stoor Profiel</string>
+    <string name="saving">Stoor tans...</string>
+    <string name="app_preferences_section">TOEPASSING VOORKEURE</string>
+    <string name="notifications">Kennisgewings</string>
+    <string name="notifications_sub">Ontvang taak- en gewoonteherinneringe</string>
+    <string name="dark_mode">Donker modus</string>
+    <string name="dark_mode_sub">Gebruik \'n donkerder voorkoms</string>
+    <string name="app_language">Toepassingsstaal</string>
+    <string name="about_section">OOR</string>
+    <string name="app_tagline">Laat elke dag tel.</string>
+    <string name="app_version">Weergawe 1.0</string>
+    <string name="back_to_dashboard">Terug na Kontroleskerm</string>
+
+    <!-- Tasks Screen -->
+    <string name="tasks_subtitle">Organiseer en volg jou daaglikse take.</string>
+    <string name="total_tasks">Totale Takke</string>
+    <string name="completed_tasks">Voltooi</string>
+    <string name="add_new_task">Voeg Nuwe Taak By</string>
+    <string name="task_title_hint">Taaktitel (bv. Voltooi verslag)</string>
+    <string name="task_desc_hint">Taakbeskrywing (opsioneel)</string>
+    <string name="select_due_date">Kies keerdatum</string>
+    <string name="priority">Prioriteit</string>
+    <string name="add_task_btn">Voeg Taak By</string>
+    <string name="filter_tasks">Filtreer Takke</string>
+    <string name="your_tasks">Jou Takke</string>
+    <string name="no_tasks_empty">Nog geen takke nie. Voeg jou eerste taak hierbo by.</string>
+    <string name="no_tasks_category">Geen takke in hierdie kategorie gevind nie.</string>
+    <string name="delete_task">Skrap taak</string>
+    <string name="confirm_delete_task_title">Skrap taak</string>
+    <string name="confirm_delete_task_msg">Is jy seker jy wil \'%1$s\' skrap?</string>
+    <string name="delete">Skrap</string>
+    <string name="cancel">Kanselleer</string>
+
+    <!-- Habits Screen -->
+    <string name="habits_subtitle">Bou positiewe daaglikse roetines.</string>
+    <string name="habits_progress">Gewoonte Vordering</string>
+    <string name="habits_completed_fmt">%1$d van %2$d gewoontes voltooi</string>
+    <string name="add_new_habit">Voeg Nuwe Gewoonte By</string>
+    <string name="habit_name_hint">Gewoonte naam (bv. Lees 15 min)</string>
+    <string name="frequency">Frekwensie</string>
+    <string name="add_habit_btn">Voeg Gewoonte By</string>
+    <string name="your_habits">Jou Gewoontes</string>
+    <string name="no_habits_empty">Nog geen gewoontes nie. Skep jou eerste gewoonte!</string>
+    <string name="delete_habit">Skrap gewoonte</string>
+    <string name="confirm_delete_habit_title">Skrap gewoonte</string>
+    <string name="confirm_delete_habit_msg">Is jy seker jy wil \'%1$s\' skrap?</string>
+
+    <!-- Notes Screen -->
+    <string name="notes_title">Notas</string>
+    <string name="notes_subtitle">Vang jou gedagtes en idees vas.</string>
+    <string name="search_notes_hint">Soek notas...</string>
+    <string name="add_new_note">Voeg By / Wysig Nota</string>
+    <string name="note_title_hint">Nota titel</string>
+    <string name="note_content_hint">Skryf jou nota hier...</string>
+    <string name="card_color">Kaart Kleur</string>
+    <string name="save_note_btn">Stoor Nota</string>
+    <string name="update_note_btn">Opdateer Nota</string>
+    <string name="your_notes">Jou Notas</string>
+    <string name="no_notes_empty">Nog geen notas gestoor nie. Skep jou eerste nota!</string>
+    <string name="no_notes_match">Geen notas gevind wat by jou soektog pas nie.</string>
+    <string name="edit">Wysig</string>
+
+    <!-- Auth / Main Screen -->
+    <string name="welcome_back">Welkom terug</string>
+    <string name="signin_sub">Meld aan om jou dag te bestuur.</string>
+    <string name="create_account">Skep rekening</string>
+    <string name="signup_sub">Sluit aan by Routina en organiseer jou dag.</string>
+    <string name="tab_sign_in">Meld Aan</string>
+    <string name="tab_sign_up">Registreer</string>
+    <string name="full_name">Volle Naam</string>
+    <string name="full_name_hint">Voer jou volle naam in</string>
+    <string name="email">E-posadres</string>
+    <string name="email_hint">naam@voorbeeld.com</string>
+    <string name="password">Wagwoord</string>
+    <string name="password_hint">Voer jou wagwoord in</string>
+    <string name="confirm_password">Bevestig Wagwoord</string>
+    <string name="confirm_password_hint">Voer weer jou wagwoord in</string>
+    <string name="forgot_password">Wagwoord vergeet?</string>
+    <string name="sign_in_with_google">Meld aan met Google</string>
+    <string name="or_divider">OF</string>
+
+    <!-- String Arrays -->
+    <string-array name="task_priorities">
+        <item>Laag</item>
+        <item>Medium</item>
+        <item>Hoog</item>
+    </string-array>
+
+    <string-array name="task_filters">
+        <item>Alle Takke</item>
+        <item>Hangende</item>
+        <item>Voltooi</item>
+    </string-array>
+
+    <string-array name="habit_frequencies">
+        <item>Elke dag</item>
+        <item>Weekdae</item>
+        <item>Naweke</item>
+    </string-array>
+
+    <string-array name="note_colors">
+        <item>Blou</item>
+        <item>Pers</item>
+        <item>Groen</item>
+        <item>Geel</item>
+        <item>Pienk</item>
+    </string-array>
+
+    <string-array name="app_languages">
+        <item>English</item>
+        <item>Afrikaans</item>
+        <item>Setswana</item>
+    </string-array>
+</resources>

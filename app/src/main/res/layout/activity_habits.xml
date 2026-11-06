@@ -1,64 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewHabits"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/toolbar"
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_header"
+            android:textColor="@color/brand_primary"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/routina_green"
-            android:title="@string/habits"
-            app:titleTextColor="@color/white"
-            app:menu="@menu/menu_habits" />
+            android:layout_height="wrap_content"
+            android:text="@string/habits"
+            android:textColor="@color/text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
 
-        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipeRefresh"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:text="@string/habits_subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp" />
 
-            <FrameLayout
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_auth_card"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/habits_progress"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtHabitProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 of 0 habits completed"
+                android:textColor="@color/brand_purple"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <ProgressBar
+                android:id="@+id/progressHabits"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="10dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/brand_purple"
+                android:progressBackgroundTint="@color/divider_color"
+                android:layout_marginTop="15dp" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/habitsRecyclerView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="8dp"
-                    android:clipToPadding="false" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progress_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:layout_marginTop="12dp" />
 
-                <TextView
-                    android:id="@+id/emptyStateText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="No habits yet. Tap + to add one."
-                    android:textColor="@color/text_secondary"
-                    android:visibility="gone" />
+        </LinearLayout>
 
-            </FrameLayout>
 
-        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_auth_card"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_habit"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtHabitName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/habit_name_hint"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_muted"
+                android:singleLine="true"
+                android:inputType="textCapSentences"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:backgroundTint="@color/input_stroke"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frequency"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp" />
+
+            <Spinner
+                android:id="@+id/spinnerHabitFrequency"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/habit_frequencies"
+                android:backgroundTint="@color/input_stroke" />
+
+            <Button
+                android:id="@+id/btnAddHabit"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/add_habit_btn"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/brand_purple"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_habits"
+            android:textColor="@color/text_primary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <LinearLayout
+            android:id="@+id/habitContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/txtEmptyHabits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_habits_empty"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:padding="25dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBackDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/back_to_dashboard"
+            android:textAllCaps="false"
+            android:textColor="@color/secondary_btn_text"
+            android:backgroundTint="@color/secondary_btn_bg"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp" />
 
     </LinearLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addHabitFab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="20dp"
-        android:contentDescription="@string/add_habit"
-        android:src="@android:drawable/ic_input_add"
-        app:backgroundTint="@color/routina_green"
-        app:tint="@color/white" />
-
-</FrameLayout>
+</ScrollView>
